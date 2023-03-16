@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hola</title>
+</head>
+
+<body>
+    {% for post in posts%}
+    <div>
+        <p>publicado:{{post.published_date}}</p>
+        <h2><a href="">{{post.title}}</a></h2>
+        <p>{{post.text}}</p>
+    </div>
+    {% endfor %}
+
+</body>
+
+</html>
